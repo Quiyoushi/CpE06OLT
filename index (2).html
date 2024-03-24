@@ -1,0 +1,119 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Tech Lab</title>
+</head>
+<body>
+
+<div id="header">
+        <h1>
+            Jose Quinito T. Fajardo
+        </h1>
+        <div class="header-description">
+            <h2>
+                BSCPE II - GF 
+            </h2>
+
+        </div>
+</div>
+
+<div id="content">
+    <h2>
+        CPE06 - ONLINE TECHNOLOGY
+    </h2>
+
+    <div class="buttons">
+        <button id="dcenterfloat">Data Center (Float)</button>
+        <button id="dcenterflex">Data Center (Flex)</button>
+        <button id="bold">Bold (Flex)</button>
+    </div>
+    
+
+</div>
+
+
+
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+
+        #header {
+            width: 100%;
+            height: auto;
+            background-color: grey;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+            padding: 20px 0;
+        }
+
+     
+
+        .header-description {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #content {
+            background-color: #f0f0f0;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 5px;
+            min-height: 100vh;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            flex: 1;
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .Buttons button:hover {
+            background-color: darkblue;
+        }
+       
+</style>
+
+
+<script>
+    // JavaScript to handle button click event
+    document.getElementById("dcenterfloat").addEventListener("click", function() {
+        // Redirect to the desired file
+        window.location.href = "Data Center(Float)";
+    });
+    document.getElementById("dcenterflex").addEventListener("click", function() {
+        // Redirect to the desired file
+        window.location.href = "Data Center(Flex)";
+    });
+    document.getElementById("bold").addEventListener("click", function() {
+        // Redirect to the desired file
+        window.location.href = "Bold";
+    });
+</script>
+</script>
+
+</body>
+</html>
