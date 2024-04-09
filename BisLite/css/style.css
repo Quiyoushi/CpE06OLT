@@ -91,6 +91,7 @@ h1 {
     font-size: 13px;
     font-weight: bold;
     padding: 8px 8px;
+    position: relative;
     text-transform: uppercase;
 }
 
@@ -114,6 +115,17 @@ h1 {
     top: 24px;
     visibility: hidden;
     width: 197px;
+    z-index: 2;
+}
+.with-dropdown ul::before {
+    content: ''; 
+    position: absolute; 
+    top: -5px; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: #fff; 
+    z-index: -1; 
 }
 
 .first-list:hover.first-list ul {
@@ -132,6 +144,8 @@ h1 {
 }
 
 .second-list {
+    position: relative;
+    z-index: 1;
     margin: 0 5px;
     padding: 10px;
     
@@ -161,9 +175,12 @@ h1 {
     position: relative; 
 
 }
+
 #slideshow-container > ul > li > img {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
+ 
+    z-index: 1; /* Set a lower z-index for the slideshow image to place it behind other content */
 }
 
 #slideshow-area {
@@ -172,7 +189,6 @@ h1 {
     padding: 19px 0 28px 0;
 
 }
-
 
 
 #slideshow-dots ul {
@@ -498,8 +514,8 @@ h1 {
 }
 
 #download {
-    background: #e8fcfe;
-    border: 1px solid #81e4ed;
+    background: #a2dee3;
+    border: 1px solid #55bdc6;
     padding: 30px 30px;
 }
 
@@ -511,7 +527,7 @@ h1 {
 }
 
 #download p {
-    color: #363636;
+    color: #333333;
     font-size: 16px;
     line-height: 26px;
     width: 608px;
@@ -536,15 +552,14 @@ h1 {
 	
     padding: 10px;
     width: 230px;
-	background: linear-gradient(180deg, rgba(139,238,249,1) 0%, rgba(139,238,249,1) 2%, rgba(116,217,229,1) 3%, rgba(45,174,202,1) 100%);
+	background: linear-gradient(180deg, rgb(110, 221, 234) 0%, rgba(139,238,249,1) 2%, rgba(116,217,229,1) 3%, rgba(45,174,202,1) 100%);
 	border-radius: 5px;
-	border: #2aacc8 2px solid;
+	border: #67b3c5 2px solid;
 	
 	box-shadow: 1px 4px 15px -7px rgba(0,0,0,0.75);
 	-webkit-box-shadow: 1px 4px 15px -7px rgba(0,0,0,0.75);
 	-moz-box-shadow: 1px 4px 15px -7px rgba(0,0,0,0.75);
 
-	transition: all 0.3s ease;
 }
 
 
@@ -826,7 +841,7 @@ p#copyright {
     #main-menu  {
         align-items: flex-start;
     }
-    .menu-logo-burgir > #toggle {
+    .menu-logo-stack > #toggle {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
