@@ -35,12 +35,12 @@ for (var i = 0; i < acc.length; i++) {
 var sliderNavItems = $('.slider_nav-item');
  
  var imageUrls = [
-    "/img/slider-image.jpg",
-    "/img/slider-do.jpg",
-    "/img/slider-gb.jpg",
-    "/img/slider-s.jpg",
-    "/img/slider-nk.jpg",
-    "/img/slider-rt.jpg"
+    "img/slider-image.jpg",
+    "img/slider-do.jpg",
+    "img/slider-gb.jpg",
+    "img/slider-s.jpg",
+    "img/slider-nk.jpg",
+    "img/slider-rt.jpg"
 ];
 
 
