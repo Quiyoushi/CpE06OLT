@@ -21,4 +21,4 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: Basic Crud/olt/crud/  
-          server-dir: htdocs/  
+          server-dir: htdocs/
