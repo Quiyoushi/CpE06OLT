@@ -1,6 +1,6 @@
 <?php
 	
-	define("DSN","mysql:host=sql112.infinityfree.com=if0_36739437_employeedb");
+	define("DSN","mysql:host=sql112.infinityfree.com;dbname=if0_36739437_employeedb");
 	define("DBUSER","if0_36739437");
 	define("DBPASS","xuUQC3DpRTdd4");
 
